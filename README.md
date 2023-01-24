@@ -47,7 +47,7 @@ A Cloud Storage bucket is then created, wherein these CSV files are uploaded and
 
 gcloud sql connect NAME_OF_INSTANCE --user=root --quiet
 
-Once the mysql> prompt appears, a new database called 'bike' is created. Within this databse, two empty tables named 'nyc1' and 'nyc2' are created. In the Cloud Console, the two CSV files 'start_stations' and 'end_stations' are then imported (from the Cloud Storage bucket) into the 'nyc1' and 'nyc2' tables, respectively. In the Cloud Shell session, we confirm the two tables have been filled now. 'nyc1' contains 919 rows and 'nyc2' contains 967 rows. 
+Once the mysql> prompt appears, a new database called 'bike' is created. Within this databse, two empty tables named 'nyc1' and 'nyc2' are created. In the Cloud Console, the two CSV files 'start_stations' and 'end_stations' are then imported (from the Cloud Storage bucket) into the 'nyc1' and 'nyc2' tables, respectively. In the Cloud Shell session, we confirm the two tables have been filled now. 'nyc1' contains 919 rows and 'nyc2' contains 967 rows. The records were grouped by (GROUP BY) the station names, hence why there are only 919 starting stations and 967 end stations out of around 59 million records. 
 
 ![nyc1_top3]()
 ![nyc1_rows]()
@@ -61,7 +61,7 @@ The header rows are deleted from the two tables.
 The tables are now ready to query data from (results shared under the Results section).
 
 #### Data Visualizations in Vertex AI (Writing Queries in Notebook and Visualizing the Results)
-Queries were written in a Notebook and the reuslts then visualized. Vertex AI API (and the Notebook API) was enabled, and a notebook created by visiting User-Managed Notebooks > New Notebook > Python 3. To be able to run queries on a BigQuery dataset through the notebook, we first installed and then imported the BigQuery Python Client library. 
+Queries were written in a Notebook on the original citibike_trips data (which has around 59 million records), and the reuslts then visualized. Vertex AI API (and the Notebook API) was enabled, and a notebook created by visiting User-Managed Notebooks > New Notebook > Python 3. To be able to run queries on a BigQuery dataset through the notebook, we first installed and then imported the BigQuery Python Client library. 
 
 ![install]()
 ![import]()
