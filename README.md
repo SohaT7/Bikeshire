@@ -15,7 +15,7 @@
 
 ## Overview of the Analysis
 ### Purpose:
-This project runs queries on the 59 million records in the BigQuery public dataset New York Citibike, in addition to making data visualizations, using Cloud SQL (MySQL), Vertex AI, CLoud Shell, and Cloud Storage buckets.
+This project runs queries on the 59 million records in the BigQuery public dataset New York Citibike, in addition to making data visualizations, using Cloud SQL (MySQL), Vertex AI, Cloud Shell, and Cloud Storage buckets in Google Cloud Platform (GCP).
 
 ### About the Dataset:
 The dataset is the NYC Citibike dataset taken from the public datasets available in BigQuery. The "citibike_trips" table used herein can be found under the "new_york_citibike" dataset on BigQuery, to be exact. The "citibike_trips" contains nearly 59 million records (58,937,715).
