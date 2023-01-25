@@ -33,7 +33,7 @@ The Cloud Shell was activated and the project configured therein. In BigQuery, t
 #### Queries in Cloud SQL
 Queries written and run on the data in citibike_trips extract number of users for each starting stations and end stations (GROUP BY, ORDER BY), and the results are then saved as CSV files locally. 
 
-![query_nyc1](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/query_nyc1.png)
+<img style="width:60%" alt="query_nyc1" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/query_nyc1.png">
 
 A Cloud Storage bucket is then created, wherein these CSV files are uploaded and renamed to 'start_stations' and 'end_stations'. A Cloud SQL instance is then created by visiting the Navigation menu > SQL > Create Instance > Choose MySQL. The Cloud Shell is opened in a new tab, and we connect to the SQL instance created earlier through the following command:
 
@@ -41,14 +41,14 @@ gcloud sql connect NAME_OF_INSTANCE --user=root --quiet
 
 Once the mysql> prompt appears, a new database called 'bike' is created. Within this databse, two empty tables named 'nyc1' and 'nyc2' are created. In the Cloud Console, the two CSV files 'start_stations' and 'end_stations' are then imported (from the Cloud Storage bucket) into the 'nyc1' and 'nyc2' tables, respectively. In the Cloud Shell session, we confirm the two tables have been filled now. 'nyc1' contains 919 rows and 'nyc2' contains 967 rows. The records were grouped by (GROUP BY) the station names, hence why there are only 919 starting stations and 967 end stations out of around 59 million records. 
 
-![nyc1](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/nyc1.png)
-![nyc1_rows](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/nyc1_rows.png)
-![nyc2](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/nyc2.png)
-![nyc2_rows](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/nyc2_rows.png)
+<img style="width:60%" alt="nyc1" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/nyc1.png">
+<img style="width:60%" alt="nyc1_rows" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/nyc1_rows.png">
+<img style="width:60%" alt="nyc2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/nyc2.png">
+<img style="width:60%" alt="nyc2_rows" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/nyc2_rows.png">
 
 The header rows are deleted from the two tables.
 
-![query_DELheaders](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/query_DELheaders.png)
+<img style="width:60%" alt="query_DELheaders" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/query_DELheaders.png">
 
 The tables are now ready to query data from (results shared under the Results section).
 
@@ -57,54 +57,52 @@ Queries were written in a Notebook on the original citibike_trips data (which ha
 
 A query is run on the Bigquery dataset and the results stored in a dataframe. The data is then pivoted to create charts.
 
-![code_sql](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_sql.png)
+<img style="width:60%" alt="code_sql" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_sql.png">
 
-![code_pivot](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_pivot.png)
-
-<img style="width:60%" alt="acc_nn" src="">
+<img style="width:60%" alt="code_pivot" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_pivot.png">
 
 ## Results
 ### Cloud SQL Queries
 
-![topStart](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart.png)
+<img style="width:60%" alt="topStart" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart.png">
 
-![topStart_D](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart_D.png)
+<img style="width:60%" alt="topStart_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart_D.png">
 
-![topEnd](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd.png)
+<img style="width:60%" alt="topEnd" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd.png">
 
-![topEnd_D](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd_D.png)
+<img style="width:60%" alt="topEnd_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd_D.png">
 
-![bottomStart_D](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomStart_D.png)
+<img style="width:60%" alt="bottomStart_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomStart_D.png">
 
-![bottomEnd_D](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomEnd_D.png)
+<img style="width:60%" alt="bottomEnd_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomEnd_D.png">
 
-![topUnion_D](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topUnion_D.png)
+<img style="width:60%" alt="topUnion_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topUnion_D.png">
 
-![topUnion](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topUnion.png)
+<img style="width:60%" alt="topUnion" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topUnion.png">
 
-![bottomUnion_D](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomUnion_D.png)
+<img style="width:60%" alt="bottomUnion_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomUnion_D.png">
 
-![bottomUnion](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomUnion.png)
+<img style="width:60%" alt="bottomUnion" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomUnion.png">
 
 ### Data Visualizations 
 
-![top10start](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10start.png)
+<img style="width:60%" alt="top10start" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10start.png">
 
-![bottom10start](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom10start.png)
+<img style="width:60%" alt="bottom10start" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom10start.png">
 
-![top10end](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10end.png)
+<img style="width:60%" alt="top10end" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10end.png">
 
-![bottom30end](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom30end.png)
+<img style="width:60%" alt="bottom30end" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom30end.png">
 
-![chart_usertype](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype.png)
+<img style="width:60%" alt="chart_usertype" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype.png">
 
-![chart_usertype3](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype3.png)
+<img style="width:60%" alt="chart_usertype3" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype3.png">
 
-![chart_usertype2](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype2.png)
+<img style="width:60%" alt="chart_usertype2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype2.png">
 
-![chart_gender](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender.png)
+<img style="width:60%" alt="chart_gender" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender.png">
 
-![chart_gender2](https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender2.png)
+<img style="width:60%" alt="chart_gender2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender2.png">
 
 ## Summary
 
