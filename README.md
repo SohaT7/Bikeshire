@@ -15,7 +15,7 @@
 
 ## Overview of the Analysis
 ### Purpose:
-
+This project runs queries on the 59 million records in the BigQuery public dataset New York Citibike, in addition to making data visualizations, using Cloud SQL (MySQL), Vertex AI, CLoud Shell, and Cloud Storage buckets.
 
 ### About the Dataset:
 The dataset is the NYC Citibike dataset taken from the public datasets available in BigQuery. The "citibike_trips" table used herein can be found under the "new_york_citibike" dataset on BigQuery, to be exact. The "citibike_trips" contains nearly 59 million records (58,937,715).
@@ -35,10 +35,11 @@ The project is divided into two parts:
 * The second part writes queries and visualizes data in a Vertex AI notebook, and makes use of BigQuery Client to send and receive messages from the BigQuery API.
 
 In sum total, the project answers the following questions from the data:
-* Top Starting and End Stations with number of users greater than 250000
-* Bottom Starting and End Stations with number of users less than 100
-* Top 10 Starting and End Stations 
-* Bottom 10 Starting and Bottom 30 End Stations 
+
+* Top Starting Stations (in general, and where users are greater than 250000 only)
+* Top End Stations (in general, and where users are greater than 250000 only)
+* Bottom Starting Stations (in general, and where users are less than 100 only)
+* Bottom End Stations (in general, and where users are less than 100 only)
 * Number of users for each Usertype (Customer or Subscriber) by years
 * Number of users with a specific Gender by years
 
@@ -70,10 +71,10 @@ Queries were written in a Notebook on the original citibike_trips data (which ha
 ## Results
 ### Cloud SQL Queries
 Queries run on Cloud SQL (shown below) included:
-* Top starting stations (where number of users is greater than 250000), arranged in a descending alphabetical order (i.e. by station name)
-* Top starting stations (where number of users is greater than 250000), arranged in a descending order by number of users
-* Top end stations (where number of users is greater than 250000), arranged in a descending alphabetical order (i.e. by station name)
-* Top end stations (where number of users is greater than 250000), arranged in a descending order by number of users
+* Top starting stations (where number of users are greater than 250000), arranged in a descending alphabetical order (i.e. by station name)
+* Top starting stations (where number of users are greater than 250000), arranged in a descending order by number of users
+* Top end stations (where number of users are greater than 250000), arranged in a descending alphabetical order (i.e. by station name)
+* Top end stations (where number of users are greater than 250000), arranged in a descending order by number of users
 
 <img style="width:100%" alt="topStart" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart.png">
 
@@ -107,10 +108,8 @@ In the following queries:
 
 ### Vertex AI Queries and Data Visualizations 
 BigQuery Client was used to run queries on the dataset in BigQuery via a Notebook. The results were dispalyed in the form of a dataframe, and the data pivoted to create charts. Queries and charts were created for the following:
-* Top 10 starting stations
-* Bottom 10 starting stations
-* Top 10 end stations
-* Bottom 30 end stations
+* Top 10 starting and end stations
+* Bottom 10 starting and bottom 30 end stations
 * Usertype by year 
 * Gender by year
 
