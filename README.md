@@ -59,7 +59,7 @@ A query is run on the Bigquery dataset and the results stored in a dataframe. Th
 
 <img style="width:60%" alt="code_sql" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_sql.png">
 
-<img style="width:80%" alt="code_pivot" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_pivot.png">
+<img style="width:100%" alt="code_pivot" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_pivot.png">
 
 ## Results
 ### Cloud SQL Queries
