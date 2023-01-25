@@ -55,7 +55,7 @@ The tables are now ready to query data from (results shared under the Results se
 #### Queries and Data Visualizations in Vertex AI
 Queries were written in a Notebook on the original citibike_trips data (which has around 59 million records), and the reuslts then visualized. Vertex AI API (and the Notebook API) was enabled, and a notebook created by visiting User-Managed Notebooks > New Notebook > Python 3. To be able to run queries on a BigQuery dataset through the notebook, we first installed, and then imported and initialized the BigQuery Python Client library. BigQuery Client helps with the flow of messages to and from the BigQuery API.
 
-A query is run on the Bigquery dataset and the results stored in a dataframe. The data is then pivoted to create charts.
+Queries are run on the Bigquery dataset and the results stored in a dataframe. The data is then pivoted to create charts. The following query produces the top 10 starting stations and arranges them in a descending order as per their number of users. It returns the results in the form of a dataframe and then creates a stacked bar chart using the results. 
 
 <img style="width:60%" alt="code_sql" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_sql.png">
 
@@ -63,6 +63,11 @@ A query is run on the Bigquery dataset and the results stored in a dataframe. Th
 
 ## Results
 ### Cloud SQL Queries
+Queries run on Cloud SQL (shown below) included:
+* Top starting stations (where number of users is greater than 250000), arranged in a descending alphabetical order (i.e. by station name)
+* Top starting stations (where number of users is greater than 250000), arranged in a descending order by number of users
+* Top end stations (where number of users is greater than 250000), arranged in a descending alphabetical order (i.e. by station name)
+* Top end stations (where number of users is greater than 250000), arranged in a descending order by number of users
 
 <img style="width:100%" alt="topStart" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart.png">
 
@@ -72,9 +77,19 @@ A query is run on the Bigquery dataset and the results stored in a dataframe. Th
 
 <img style="width:100%" alt="topEnd_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd_D.png">
 
+Queries were also run for (shown below):
+* Bottom starting stations (where number of users is less than 100), arranged in a descending order by number of users
+* Bottom end stations (where number of users is less than 100), arranged in a descending order by number of users
+
 <img style="width:100%" alt="bottomStart_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomStart_D.png">
 
 <img style="width:100%" alt="bottomEnd_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomEnd_D.png">
+
+In the following queries:
+* Results for top starting stations and top end staions (where number of users is greater than 250000) were combined using the SQL command UNION, and the results arranged in a descending order by number of users
+* Results for bottom starting stations and bottom end staions (where number of users is less than 100) were combined using the SQL command UNION, and the results arranged in a descending order by number of users
+* Results for top starting stations and top end staions (where number of users is greater than 250000) were combined using the SQL command UNION, and the results arranged in a descending alphabetical order (i.e. by station name)
+* Results for bottom starting stations and bottom end staions (where number of users is less than 100) were combined using the SQL command UNION, and the results arranged in a descending alphabetical order (i.e. by station name)
 
 <img style="width:60%" alt="topUnion_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topUnion_D.png">
 
