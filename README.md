@@ -59,22 +59,22 @@ A query is run on the Bigquery dataset and the results stored in a dataframe. Th
 
 <img style="width:60%" alt="code_sql" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_sql.png">
 
-<img style="width:60%" alt="code_pivot" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_pivot.png">
+<img style="width:80%" alt="code_pivot" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_pivot.png">
 
 ## Results
 ### Cloud SQL Queries
 
-<img style="width:60%" alt="topStart" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart.png">
+<img style="width:80%" alt="topStart" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart.png">
 
-<img style="width:60%" alt="topStart_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart_D.png">
+<img style="width:80%" alt="topStart_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart_D.png">
 
-<img style="width:60%" alt="topEnd" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd.png">
+<img style="width:80%" alt="topEnd" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd.png">
 
-<img style="width:60%" alt="topEnd_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd_D.png">
+<img style="width:80%" alt="topEnd_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd_D.png">
 
-<img style="width:60%" alt="bottomStart_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomStart_D.png">
+<img style="width:80%" alt="bottomStart_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomStart_D.png">
 
-<img style="width:60%" alt="bottomEnd_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomEnd_D.png">
+<img style="width:80%" alt="bottomEnd_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomEnd_D.png">
 
 <img style="width:60%" alt="topUnion_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topUnion_D.png">
 
@@ -86,23 +86,23 @@ A query is run on the Bigquery dataset and the results stored in a dataframe. Th
 
 ### Data Visualizations 
 
-<img style="width:60%" alt="top10start" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10start.png">
+<img style="width:80%" alt="top10start" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10start.png">
 
-<img style="width:60%" alt="bottom10start" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom10start.png">
+<img style="width:80%" alt="bottom10start" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom10start.png">
 
-<img style="width:60%" alt="top10end" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10end.png">
+<img style="width:80%" alt="top10end" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10end.png">
 
-<img style="width:60%" alt="bottom30end" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom30end.png">
+<img style="width:80%" alt="bottom30end" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom30end.png">
 
-<img style="width:60%" alt="chart_usertype" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype.png">
+<img style="width:80%" alt="chart_usertype" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype.png">
 
-<img style="width:60%" alt="chart_usertype3" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype3.png">
+<img style="width:80%" alt="chart_usertype3" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype3.png">
 
-<img style="width:60%" alt="chart_usertype2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype2.png">
+<img style="width:80%" alt="chart_usertype2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype2.png">
 
-<img style="width:60%" alt="chart_gender" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender.png">
+<img style="width:80%" alt="chart_gender" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender.png">
 
-<img style="width:60%" alt="chart_gender2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender2.png">
+<img style="width:80%" alt="chart_gender2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender2.png">
 
 ## Summary
 
