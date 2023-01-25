@@ -53,13 +53,7 @@ The header rows are deleted from the two tables.
 The tables are now ready to query data from (results shared under the Results section).
 
 #### Queries and Data Visualizations in Vertex AI
-Queries were written in a Notebook on the original citibike_trips data (which has around 59 million records), and the reuslts then visualized. Vertex AI API (and the Notebook API) was enabled, and a notebook created by visiting User-Managed Notebooks > New Notebook > Python 3. To be able to run queries on a BigQuery dataset through the notebook, we first installed, and then imported and initialized the BigQuery Python Client library. BigQuery Client helps with the flow of messages to and from the BigQuery API.
-
-Queries are run on the Bigquery dataset and the results stored in a dataframe. The data is then pivoted to create charts. The following query produces the top 10 starting stations and arranges them in a descending order as per their number of users. It returns the results in the form of a dataframe and then creates a stacked bar chart using the results. 
-
-<img style="width:60%" alt="code_sql" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_sql.png">
-
-<img style="width:100%" alt="code_pivot" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_pivot.png">
+Queries were written in a Notebook on the original citibike_trips data (which has around 59 million records), and the reuslts then visualized. Vertex AI API (and the Notebook API) was enabled, and a notebook created by visiting User-Managed Notebooks > New Notebook > Python 3. To be able to run queries on a BigQuery dataset through the notebook, we first installed, and then imported and initialized the BigQuery Python Client library. BigQuery Client helps with the flow of messages to and from the BigQuery API. Queries are then run on the Bigquery dataset and the results stored in a dataframe. The data is then pivoted to create charts. 
 
 ## Results
 ### Cloud SQL Queries
@@ -99,21 +93,48 @@ In the following queries:
 
 <img style="width:60%" alt="bottomUnion" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomUnion.png">
 
-### Data Visualizations 
+### Queries and Data Visualizations 
+BigQuery Client was used to run queries on the dataset in BigQuery via a Notebook. The results were dispalyed in the form of a dataframe, and the data pivoted to create charts. Queries and charts were created for the following:
+* Top 10 starting stations
+* Bottom 10 starting stations
+* Top 10 end stations
+* Bottom 30 end stations
+* Usertype by year 
+* Gender by year
+
+The following query produces the top 10 starting stations and arranges them in a descending order as per their number of users. It returns the results in the form of a dataframe and then creates a stacked bar chart using the results. 
+
+<img style="width:60%" alt="code_sql" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_sql.png">
+
+<img style="width:100%" alt="code_pivot" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/code_pivot.png">
 
 <img style="width:100%" alt="top10start" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10start.png">
 
+A bar chart for the bottom 10 starting stations is given below:
+
 <img style="width:100%" alt="bottom10start" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom10start.png">
+
+Following are the bar charts for the top 10 end stations and the bottom 30 end stations:
 
 <img style="width:100%" alt="top10end" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10end.png">
 
 <img style="width:100%" alt="bottom30end" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom30end.png">
+
+A query run to find the number of users for each usertype (i.e. customer and subscriber) is given below, followed by variations of bar charts displaying the results:
+
+<img style="width:60%" alt="query_usertype" src="<img style="width:100%" alt="chart_usertype" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/query_usertype.png">
 
 <img style="width:100%" alt="chart_usertype" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype.png">
 
 <img style="width:100%" alt="chart_usertype3" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype3.png">
 
 <img style="width:100%" alt="chart_usertype2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype2.png">
+
+Lastly, a query was run to find out the number of users that fall into different categories of gender, and how those numbers have changed over the years:
+
+<img style="width:60%" alt="query_gender" src="">
+
+The different car charts visulaizing gender of users by years are shown below:
 
 <img style="width:100%" alt="chart_gender" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender.png">
 
