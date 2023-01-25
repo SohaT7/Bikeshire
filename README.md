@@ -9,7 +9,7 @@
         - [Queries and Data Visualizations in Vertex AI](#Queries-and-Data-Visualizations-in-Vertex-AI)
 - [Results](#results) 
     - [Cloud SQL Queries](#Cloud-SQL-Queries)
-    - [Data Visualizations](#Data-Visualizations)
+    - [Vertex AI Queries and Data Visualizations](#Vertex-AI-Queries-and-Data-Visualizations)
 - [Summary](#summary)
 - [Contact Information](#contact-information)
 
@@ -35,14 +35,10 @@ The project is divided into two parts:
 * The second part writes queries and visualizes data in a Vertex AI notebook, and makes use of BigQuery Client to send and receive messages from the BigQuery API.
 
 In sum total, the project answers the following questions from the data:
-* Top Starting Stations with number of users greater than 250000
-* Top End Stations with number of users greater than 250000
-* Bottom Starting Stations with number of users less than 100
-* Bottom End Stations with number of users less than 100
-* Top 10 Starting Stations 
-* Top 10 End Stations
-* Bottom 10 Starting Stations 
-* Bottom 30 End Stations 
+* Top Starting and End Stations with number of users greater than 250000
+* Bottom Starting and End Stations with number of users less than 100
+* Top 10 Starting and End Stations 
+* Bottom 10 Starting and Bottom 30 End Stations 
 * Number of users for each Usertype (Customer or Subscriber) by years
 * Number of users with a specific Gender by years
 
@@ -109,7 +105,7 @@ In the following queries:
 
 <img style="width:60%" alt="bottomUnion" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomUnion.png">
 
-### Queries and Data Visualizations 
+### Vertex AI Queries and Data Visualizations 
 BigQuery Client was used to run queries on the dataset in BigQuery via a Notebook. The results were dispalyed in the form of a dataframe, and the data pivoted to create charts. Queries and charts were created for the following:
 * Top 10 starting stations
 * Bottom 10 starting stations
@@ -146,6 +142,8 @@ A query run to find the number of users for each usertype (i.e. customer and sub
 
 <img style="width:100%" alt="chart_usertype2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype2.png">
 
+Subscribers form the larger chunk of users, being almost 40%-100% higher than the number of Customers. Sharper increases can be observed from 2013-2014 and from 2016-2017 for Subscribers. For Customers, there is a very small increase from 2013-2014 and a relatively larger increase from 2016-2017. There is a slight decrease in number of Customers from 2015 to 2016. 2017-2018 shows a decline in both the number of Customers as well as Subscribers.
+
 Lastly, a query was run to find out the number of users that fall into different categories of gender, and how those numbers have changed over the years:
 
 <img style="width:60%" alt="query_gender" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/query_gender.png">
@@ -156,7 +154,10 @@ The different car charts visulaizing gender of users by years are shown below:
 
 <img style="width:100%" alt="chart_gender2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender2.png">
 
+There has been an increase in number of users for all gender categories up until 2017, whereafter there has been a decline. Relatively sharper increases can be observed from 2013-2014 and 2016-2017, with an almost leveling during the 2015-2016 year in between. Male gender consists of the largest chunk of users, followed by females, and then the 'unknown' category. 
+
 ## Summary
+The top starting and end stations have been queried in general but also with a specific conditional of number of users being greater than 250000 applied to them. Similarly for bottom starting and end stations, where the conditional spcified that the number of users should be less than 100. The results are given above. The number of users by Usertype and Gender were also queried, in order to compare how the ratios of users falling in each category within Usertype and Gender have changed over the years.
 
 ## Contact Information
 Email: st.sohatariq@gmail.com
