@@ -6,7 +6,7 @@
     - [Tools Used](#tools-used)
     - [Description](#description)
         - [Queries in Cloud SQL](#Queries-in-Cloud-SQL)
-        - [Data Visualizations in Vertex AI](#Data-Visualizations-in-Vertex-AI)
+        - [Queries and Data Visualizations in Vertex AI](#Queries-and-Data-Visualizations-in-Vertex-AI)
 - [Results](#results) 
     - [Cloud SQL Queries](#Cloud-SQL-Queries)
     - [Data Visualizations](#Data-Visualizations)
@@ -33,7 +33,7 @@ The Cloud Shell was activated and the project configured therein. In BigQuery, t
 #### Queries in Cloud SQL
 Queries written and run on the data in citibike_trips extract number of users for each starting stations and end stations (GROUP BY, ORDER BY), and the results are then saved as CSV files locally. 
 
-<img style="width:60%" alt="query_nyc1" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/query_nyc1.png">
+<img style="width:100%" alt="query_nyc1" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/query_nyc1.png">
 
 A Cloud Storage bucket is then created, wherein these CSV files are uploaded and renamed to 'start_stations' and 'end_stations'. A Cloud SQL instance is then created by visiting the Navigation menu > SQL > Create Instance > Choose MySQL. The Cloud Shell is opened in a new tab, and we connect to the SQL instance created earlier through the following command:
 
@@ -52,7 +52,7 @@ The header rows are deleted from the two tables.
 
 The tables are now ready to query data from (results shared under the Results section).
 
-#### Data Visualizations in Vertex AI
+#### Queries and Data Visualizations in Vertex AI
 Queries were written in a Notebook on the original citibike_trips data (which has around 59 million records), and the reuslts then visualized. Vertex AI API (and the Notebook API) was enabled, and a notebook created by visiting User-Managed Notebooks > New Notebook > Python 3. To be able to run queries on a BigQuery dataset through the notebook, we first installed, and then imported and initialized the BigQuery Python Client library. BigQuery Client helps with the flow of messages to and from the BigQuery API.
 
 A query is run on the Bigquery dataset and the results stored in a dataframe. The data is then pivoted to create charts.
@@ -64,17 +64,17 @@ A query is run on the Bigquery dataset and the results stored in a dataframe. Th
 ## Results
 ### Cloud SQL Queries
 
-<img style="width:80%" alt="topStart" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart.png">
+<img style="width:100%" alt="topStart" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart.png">
 
-<img style="width:80%" alt="topStart_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart_D.png">
+<img style="width:100%" alt="topStart_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topStart_D.png">
 
-<img style="width:80%" alt="topEnd" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd.png">
+<img style="width:100%" alt="topEnd" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd.png">
 
-<img style="width:80%" alt="topEnd_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd_D.png">
+<img style="width:100%" alt="topEnd_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topEnd_D.png">
 
-<img style="width:80%" alt="bottomStart_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomStart_D.png">
+<img style="width:100%" alt="bottomStart_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomStart_D.png">
 
-<img style="width:80%" alt="bottomEnd_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomEnd_D.png">
+<img style="width:100%" alt="bottomEnd_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottomEnd_D.png">
 
 <img style="width:60%" alt="topUnion_D" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/topUnion_D.png">
 
@@ -86,23 +86,23 @@ A query is run on the Bigquery dataset and the results stored in a dataframe. Th
 
 ### Data Visualizations 
 
-<img style="width:80%" alt="top10start" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10start.png">
+<img style="width:100%" alt="top10start" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10start.png">
 
-<img style="width:80%" alt="bottom10start" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom10start.png">
+<img style="width:100%" alt="bottom10start" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom10start.png">
 
-<img style="width:80%" alt="top10end" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10end.png">
+<img style="width:100%" alt="top10end" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/top10end.png">
 
-<img style="width:80%" alt="bottom30end" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom30end.png">
+<img style="width:100%" alt="bottom30end" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/bottom30end.png">
 
-<img style="width:80%" alt="chart_usertype" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype.png">
+<img style="width:100%" alt="chart_usertype" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype.png">
 
-<img style="width:80%" alt="chart_usertype3" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype3.png">
+<img style="width:100%" alt="chart_usertype3" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype3.png">
 
-<img style="width:80%" alt="chart_usertype2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype2.png">
+<img style="width:100%" alt="chart_usertype2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype2.png">
 
-<img style="width:80%" alt="chart_gender" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender.png">
+<img style="width:100%" alt="chart_gender" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender.png">
 
-<img style="width:80%" alt="chart_gender2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender2.png">
+<img style="width:100%" alt="chart_gender2" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_gender2.png">
 
 ## Summary
 
