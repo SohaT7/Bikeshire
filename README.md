@@ -28,7 +28,23 @@ The dataset is the NYC Citibike dataset taken from the public datasets available
 * My SQL
 
 ### Description:
-The Cloud Shell was activated and the project configured therein. In BigQuery, the "new_york_citibike" dataset was then starred, which contains two tables: citibike_stations and citibike_trips. 
+The Cloud Shell was activated and the project configured therein. In BigQuery, the "new_york_citibike" dataset was then starred, which contains two tables: citibike_stations and citibike_trips. The latter, containing around 59 million records was used in this project.
+
+The project is divided into two parts:
+* The first part writes and runs queries in Cloud SQL (MySQL), and makes use of Cloud Shell and Cloud Storage buckets.
+* The second part writes queries and visualizes data in a Vertex AI notebook, and makes use of BigQuery Client to send and receive messages from the BigQuery API.
+
+In sum total, the project answers the following questions from the data:
+* Top Starting Stations with number of users greater than 250000
+* Top End Stations with number of users greater than 250000
+* Bottom Starting Stations with number of users less than 100
+* Bottom End Stations with number of users less than 100
+* Top 10 Starting Stations 
+* Top 10 End Stations
+* Bottom 10 Starting Stations 
+* Bottom 30 End Stations 
+* Number of users for each Usertype (Customer or Subscriber) by years
+* Number of users with a specific Gender by years
 
 #### Queries in Cloud SQL
 Queries written and run on the data in citibike_trips extract number of users for each starting stations and end stations (GROUP BY, ORDER BY), and the results are then saved as CSV files locally. 
@@ -122,7 +138,7 @@ Following are the bar charts for the top 10 end stations and the bottom 30 end s
 
 A query run to find the number of users for each usertype (i.e. customer and subscriber) is given below, followed by variations of bar charts displaying the results:
 
-<img style="width:60%" alt="query_usertype" src="<img style="width:100%" alt="chart_usertype" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/query_usertype.png">
+<img style="width:60%" alt="query_usertype" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/query_usertype.png">
 
 <img style="width:100%" alt="chart_usertype" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/chart_usertype.png">
 
@@ -132,7 +148,7 @@ A query run to find the number of users for each usertype (i.e. customer and sub
 
 Lastly, a query was run to find out the number of users that fall into different categories of gender, and how those numbers have changed over the years:
 
-<img style="width:60%" alt="query_gender" src="">
+<img style="width:60%" alt="query_gender" src="https://github.com/SohaT7/Bikeshire/blob/main/Resources/Images/query_gender.png">
 
 The different car charts visulaizing gender of users by years are shown below:
 
